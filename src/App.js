@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import Header from './components/LayoutComponents/Header/Header';
 import Footer from './components/LayoutComponents/Footer/Footer';
 import Loader from './components/LayoutComponents/Loader/Loader';
+
 const AboutPage = React.lazy(() => import('./pages/AboutPage')); // Lazy-loaded
 const CareerPage = React.lazy(() => import('./pages/CareerPage')); // Lazy-loaded
 const ServicesPage = React.lazy(() => import('./pages/ServicesPage')); // Lazy-loaded
@@ -11,6 +12,11 @@ const Coorperative = React.lazy(() => import('./pages/Coorperative')); // Lazy-l
 const ContactPage = React.lazy(() => import('./pages/ContactPage')); // Lazy-loaded
 const FaqPage = React.lazy(() => import('./pages/FaqPage')); // Lazy-loaded
 const Hr = React.lazy(() => import('./pages/HrPage')); // Lazy-loaded
+const NewVacancies = React.lazy(() => import('./pages/NewVacancies')); // Lazy-loaded
+const VacancyDetails = React.lazy(() => import('./pages/VacancyDetail')); // Lazy-loaded
+const BonusPage = React.lazy(() => import('./pages/BonusPage')); // Lazy-loaded
+
+
 
 function App() {
   return (
@@ -28,6 +34,12 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/faq' element={<FaqPage/>} />
           <Route path='/hr' element={<Hr/>} />
+          <Route path='/newVacancies' element={<NewVacancies/>}/>
+          <Route path='/vacancyDetails' element={<VacancyDetails/>}/>
+          <Route path='/bonus' element={<BonusPage/>}/>
+          
+       
+
 
         </Routes>
 

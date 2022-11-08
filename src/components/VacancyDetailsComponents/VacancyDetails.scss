@@ -1,0 +1,223 @@
+.Vacancy-BreadCrumb {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 5% 10%;
+
+  .homePath {
+    font-family: "Averta Demo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #b0b0b0;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .allVacPath {
+    font-family: "Averta Demo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    margin-left: 10px;
+    color: #070814;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.detailsInfo {
+  width: 80%;
+  margin: 0 10%;
+  .heading {
+    width: 50%;
+    margin-bottom: 3%;
+    h1 {
+      font-family: "Averta";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 150%;
+      color: #070814;
+    }
+  }
+
+  .date {
+    display: flex;
+    flex-direction: row;
+    .date-icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    .date-text {
+      margin-bottom: 3%;
+      p {
+        font-family: "Averta Demo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+
+        color: #5e5e5e;
+      }
+    }
+  }
+
+  .vacancyInfos {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 5%;
+    justify-content: space-between;
+    .vacancyInfo {
+      display: flex;
+      flex-direction: row;
+      h1 {
+        font-family: "Averta";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+
+        color: #000000;
+      }
+
+      p {
+        font-family: "Averta Demo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        /* or 30px */
+
+        display: flex;
+        align-items: center;
+
+        color: #070814;
+      }
+    }
+  }
+
+  .generalInfo {
+    .generalInfo-header {
+      h1 {
+        font-family: "Averta";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+      }
+    }
+
+    .generalInfo-info {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      /* or 30px */
+
+      display: flex;
+      align-items: center;
+
+      color: #160101;
+      width: 35%;
+    }
+  }
+}
+
+.Duties {
+  width: 80%;
+  margin: 5% 10%;
+  .duties-heading {
+    h1 {
+      font-family: "Averta";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+  }
+
+  .duties-list {
+    margin-left: 10px;
+   ul {
+        list-style:circle;
+      li {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #160101;
+      }
+    }
+  }
+}
+
+.VacanciesButton {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0%;
+  button {
+    width: 195px;
+    height: 40px;
+    background-color: #f99400;
+    border-radius: 26px;
+    color: black;
+    border: none;
+    outline: none;
+    font-family: "AvertaDemo";
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    &:hover {
+        color: white;
+        transition: 0.2s;
+      }
+  }
+  
+
+  p {
+    font-family: "Averta Demo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #070814;
+  }
+}
