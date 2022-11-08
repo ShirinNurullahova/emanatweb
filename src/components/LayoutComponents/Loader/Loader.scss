@@ -1,0 +1,60 @@
+$bgColor: #000;
+
+$centerDiam: 80px;
+$bgcDiam: 100px;
+
+$animDur: 3s;
+
+
+.loader {
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: 25% auto 0;
+	background-color: #fff;
+	border-radius: 50%;
+	animation: loaderAnim $animDur infinite linear;
+	&:before, &:after {
+		content: "";
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		background-color: #000;
+	}
+	&:before {
+		height: $centerDiam;
+		width: $centerDiam;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&:after {
+		height: $bgcDiam;
+		width: $bgcDiam;
+		background-color: $bgColor;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -$bgcDiam/2;
+		animation: pulse $animDur/3.14 infinite alternate;
+	}
+}
+
+@keyframes loaderAnim {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: translateY(-50%) scale(0.25);
+		border-color: #fff;
+	}
+	100% {
+		transform: translateY(-50%) scale(1.9);
+	}
+}

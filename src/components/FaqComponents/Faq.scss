@@ -1,0 +1,154 @@
+.breadcrumb {
+    padding: 104px 9.375% 0;
+
+    &-container {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin: 0 10px;
+        }
+
+        p:nth-child(1) {
+            font-family: 'Averta Demo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #B0B0B0;
+            cursor: pointer;
+        }
+
+        p:nth-child(3) {
+            font-family: 'Averta Demo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #070814;
+            cursor: pointer;
+        }
+
+
+    }
+}
+
+.faq-header {
+    padding: 104px 0 69px;
+
+    &-text {
+        text-align: center;
+        font-family: 'Averta';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: 0.01em;
+        color: #070814;
+    }
+
+    &-search {
+        width: 1170px;
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 80%;
+        padding-bottom: 22px;
+        border-bottom: 1px solid #BDBDBD;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-bar {
+            width: 100%;
+
+            input {
+                padding: 0 4px;
+                width: 100%;
+                border: none;
+                outline: none;
+                font-family: 'Averta Demo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                color: #000000;
+            }
+        }
+
+        &-buttons{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            &-lupa{
+                margin-right: 34px;
+                cursor: pointer;
+
+                svg{
+                    width: 100%;
+                }
+            }
+
+            &-delete{
+                cursor: pointer;
+                svg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.faq-accordion {
+    max-width: 1170px;
+    margin: 0 auto 155px;
+}
+
+
+.MuiAccordionSummary-content {
+    .css-ahj2mt-MuiTypography-root {
+        font-family: 'Averta' !important;
+        font-style: normal !important;
+        font-weight: 800 !important;
+        font-size: 20px !important;
+        line-height: 24px !important;
+        color: #070814 !important;
+    }
+}
+
+.MuiAccordionDetails-root {
+    .css-ahj2mt-MuiTypography-root {
+        font-family: 'Averta Demo' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 150% !important;
+        color: #070814 !important;
+    }
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    margin-bottom: 50px !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding-bottom: 20px !important;
+    border-bottom: 1px solid #BDBDBD !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+    position: absolute;
+    left: 0;
+    bottom: 0 !important;
+    height: 0 !important;
+    content: "";
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+    margin-bottom: 50px !important;
+}
