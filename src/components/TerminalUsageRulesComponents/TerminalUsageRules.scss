@@ -1,0 +1,46 @@
+@import '../../assets/styles/mixin.scss';
+@import '../../assets/styles/inheritance.scss';
+
+.usage_rules_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 11% 170px 9.2%;
+
+    .usage_rules_container {
+        width: calc(100% - 42%);
+
+        h1 {
+            margin-bottom: 65px;
+            @include textStyles('Averta', 60px, 800, #070814, 72px);
+
+            span {
+                color: #F99400;
+            }
+        }
+
+        .rules_list {
+            &__item {
+                margin-top: 35px;
+
+                p {
+                    opacity: 0.9;
+                    @include textStyles('Averta Demo', 20px, 400, #070814, 24px);
+
+                    span {
+                        @include textStyles('Averta', 20px, 800, #070814, 24px);
+                    }
+                }
+            }
+        }
+    }
+
+    .person_image {
+        margin-top: 30px;
+        max-width: 300px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

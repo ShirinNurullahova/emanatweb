@@ -1,0 +1,29 @@
+[
+    {
+        "title": "İş növləri",
+        "elements": [
+            {"item": "Tam iş günü"},
+            {"item": "Yarım iş günü"},
+            {"item": "Uzaqdan işləmə"},
+            {"item": "Təcrübə"}
+        ]
+    },
+    {
+        "title": "İş Bacarıqları",
+        "elements": [
+            {"item": "Faster"},
+            {"item": "Responsible"},
+            {"item": "Accuracy"},
+            {"item": "Group work"}
+        ]
+    },
+    {
+        "title": "Vəzifə",
+        "elements": [
+            {"item": "Front End"},
+            {"item": "Back End"},
+            {"item": "Manager"},
+            {"item": "Designer"}
+        ]
+    }
+]

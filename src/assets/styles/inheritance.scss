@@ -1,0 +1,9 @@
+%buttonStyles {
+    padding: 10px 44px;
+    border-radius: 26px;
+    background: #F99400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include textStyles('Averta Demo', 20px, 400, #070814, 24px);
+}
