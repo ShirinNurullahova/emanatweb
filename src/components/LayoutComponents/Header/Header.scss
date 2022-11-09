@@ -53,13 +53,33 @@ header {
         &-navbar {
             margin-left: 76px;
 
+            &-li {
+                position: relative;
+
+                &-div {
+                    position: absolute;
+                    visibility: hidden;
+                    background-color: white;
+                    width: 100%;
+                    padding: 3%;
+
+                    p {
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+
+            &-li:hover .header-container-navbar-li-div {
+                visibility: visible;
+            }
+
             ul {
                 display: flex;
                 list-style-type: none;
 
                 li {
                     margin-right: 29px;
-
+                    transition: 0.1s;
 
                     a {
                         font-family: 'Averta Demo';
@@ -73,6 +93,11 @@ header {
                     }
                 }
 
+                li a:hover {
+                    color:#F99400;
+                    transition: 0.1s;
+
+                }
             }
 
             ul li:nth-last-child(1) {
