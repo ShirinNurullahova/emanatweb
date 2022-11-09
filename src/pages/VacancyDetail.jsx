@@ -18,7 +18,7 @@ function VacancyDetail() {
       <Telebler />
       
       <VacancyDetailButton
-      link="../"
+      link="/contact"
       text="Müraciət et"/>
       
       <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>

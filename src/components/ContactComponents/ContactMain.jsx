@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const ContactMain = () => {
   return (
     <main className='random-main'>
@@ -13,7 +13,9 @@ const ContactMain = () => {
           təhlükəsiz eManat nağd ödəniş terminalını seçin
         </p>
         <div className="random-main-one-btn">
-          <button>Bizə qoşulun</button>
+         <Link to='/hr'>
+         <button>Bizə qoşulun</button>
+         </Link> 
         </div>
       </div>
 

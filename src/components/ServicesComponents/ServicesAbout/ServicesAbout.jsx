@@ -1,5 +1,6 @@
 import React, { Fragment, useRef, useEffect } from 'react'
 import group3 from '../../../assets/img/shirin/group-3.png'
+import girlsdown from '../../../assets/img/shirin/girlsdown.png'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
@@ -77,7 +78,7 @@ const ServicesAbout = () => {
 
                     </div>
                     <div ref={aboutRef} className='services-about-middle-right'>
-                        <img src={group3}  loading="lazy"/>
+                        <img src={girlsdown}  loading="lazy"/>
                     </div>
                 </div>
 
