@@ -55,24 +55,25 @@ header {
 
             &-li {
                 position: relative;
-
+                height: 100%;
+               &-dropdown{
+                transition: 0.5s;
+               }
                 &-div {
+                    transition: 0.5s;
                     position: absolute;
                     visibility: hidden;
                     background-color: white;
                     width: 100%;
-                    padding: 3%;
 
                     p {
                         margin-bottom: 5%;
+                        color: black !important;
+                        font-size: 12px;
                     }
+                  
                 }
             }
-
-            &-li:hover .header-container-navbar-li-div {
-                visibility: visible;
-            }
-
             ul {
                 display: flex;
                 list-style-type: none;

@@ -5,6 +5,8 @@ const Modal = (props) => {
     const boxRef=useRef()
     const open = () => {
         boxRef.current.classList.toggle("open");
+        document.getElementsByTagName('body')[0].style.overflowY='scroll'
+
         props.setMenuOpen(false)
     }
     return (
