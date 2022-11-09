@@ -13,7 +13,7 @@ const Coorperative = () => {
     <div>
      <CoorperativeMain/>
      <CoorperativeSecond/>
-  <Tag tags={['#sığorta,#təhsil,#huquq,#turizm,#ödəmə,#xeyriyyə']}/>
+     <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
     </div>
   )
 }

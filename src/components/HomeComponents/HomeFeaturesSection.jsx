@@ -91,7 +91,7 @@ const HomeFeaturesSection = () => {
               <p>Ödənişin dərhal qəbulu</p>
             </div>
             <div className="home-features-section-card-description">
-              <p>Ödəniş etdiyiniz anda provayder ödəniş barəsində məlumat alacaq və məbləğ dərhal balansınıza <a href="">köçürüləcək</a>*</p>
+              <p>Ödəniş etdiyiniz anda provayder ödəniş barəsində məlumat alacaq və məbləğ dərhal balansınıza <a href="/faq">köçürüləcək</a>*</p>
             </div>
           </div>
 

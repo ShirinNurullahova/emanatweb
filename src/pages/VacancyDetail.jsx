@@ -21,7 +21,7 @@ function VacancyDetail() {
       link="../"
       text="Müraciət et"/>
       
-      <Tag tags={['#Fusce nec,#Sit,#mauris aenea,#Pulvinar,#Faq,#Sapien cursus']}/>
+      <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
 
     </div>
   );

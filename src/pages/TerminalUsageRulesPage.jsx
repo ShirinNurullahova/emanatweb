@@ -11,7 +11,7 @@ const TerminalUsageRulesPage = () => {
     return (
         <div>
             <UsageRules />
-            <Tag tags={['#interfeys,#ödəmə,#xidmət,#vaxt,#ödəmə,#xeyriyyə']}/>
+            <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
         </div>
     )
 }

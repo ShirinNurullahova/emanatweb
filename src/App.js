@@ -5,6 +5,7 @@ import Header from './components/LayoutComponents/Header/Header';
 import Footer from './components/LayoutComponents/Footer/Footer';
 import Loader from './components/LayoutComponents/Loader/Loader';
 
+const ErrorPage = React.lazy(() => import('./pages/ErrorPage')); 
 const AboutPage = React.lazy(() => import('./pages/AboutPage')); // Lazy-loaded
 const CareerPage = React.lazy(() => import('./pages/CareerPage')); // Lazy-loaded
 const ServicesPage = React.lazy(() => import('./pages/ServicesPage')); // Lazy-loaded
@@ -18,7 +19,7 @@ const BonusPage = React.lazy(() => import('./pages/BonusPage')); // Lazy-loaded
 const AllVacanciesPage = React.lazy(() => import('./pages/AllVacanciesPage')); // Lazy-loaded
 const TerminalMapPage = React.lazy(() => import('./pages/TerminalMapPage')); // Lazy-loaded
 const TerminalUsageRulesPage = React.lazy(() => import('./pages/TerminalUsageRulesPage')); // Lazy-loaded
-
+ 
 function App() {
   return (
     <Fragment>
@@ -41,6 +42,7 @@ function App() {
           <Route path='/all-vacancies' element={<AllVacanciesPage />} />
           <Route path='/terminal-map' element={<TerminalMapPage />} />
           <Route path='/terminal-usage-rules' element={<TerminalUsageRulesPage />} />
+          <Route path='/error' element={<ErrorPage/>} />
 
         </Routes>
 

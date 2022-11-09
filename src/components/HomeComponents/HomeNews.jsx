@@ -32,7 +32,7 @@ const HomeNews = () => {
                     <SwiperSlide>
                         <div className="home-news-section-container-card">
                             <div className="home-news-section-container-card-heading">
-                                <p>Lacus mattis aliquam.</p>
+                                <p>Bonusların istifadəsi</p>
                             </div>
 
                             <div className="home-news-section-container-card-image">
@@ -49,7 +49,7 @@ const HomeNews = () => {
                                 </div>
 
                                 <div className="home-news-section-container-card-bottom-button">
-                                    <a>Ətraflı</a>
+                                    <a href="/bonus">Ətraflı</a>
                                     <span>&#8599;</span>
                                 </div>
                             </div>

@@ -31,7 +31,7 @@ const AboutPage = () => {
       <AboutServices setHeight={setHeight}/>
       <AboutTarget/>
       <AboutLocations/>
-      <Tag tags={['#sığorta,#təhsil,#huquq,#turizm,#ödəmə,#xeyriyyə']}/>
+      <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
     </Fragment>
   )
 }

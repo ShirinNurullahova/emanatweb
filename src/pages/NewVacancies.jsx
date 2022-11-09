@@ -15,7 +15,7 @@ function NewVacancies() {
         text="Bütün vakansiyalar"
         link="../all-vacancies"
         />
-        <Tag tags={['#Fusce nec,#Sit,#mauris aenea,#Pulvinar,#Faq,#Sapien cursus']}/>
+       <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
         
     </div>
   )

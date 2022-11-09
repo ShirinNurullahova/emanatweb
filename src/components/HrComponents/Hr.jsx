@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../HrComponents/Hr.scss'
 import vector from '../../assets/img/shirin/Vector.png'
 import adam from '../../assets/img/shirin/adam.png'
@@ -20,9 +21,12 @@ const Hr = () => {
         <div className='hr_main'>
             <div className='hr_main_left'>
                 <div className='hr_main_left_element'>
+                    <Link to='/'>
                     <div className='hr_main_left_element_up'>
                         <img src={logo} loading="lazy" />
                     </div>
+                    </Link>
+                    
                     
 
                 </div>

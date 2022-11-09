@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import vacancieList from './vacancie-list.json';
 
 const VacanciesList = () => {
@@ -21,7 +22,8 @@ const VacanciesList = () => {
             </div>
             <div className='vacancie_conntainer'>
                 {vacancieList.map((listEl, index) => (
-                    <div key={index} className="vacancie_details_item">
+                    <Link to='/vacancyDetails'>
+                      <div key={index} className="vacancie_details_item">
                         <div className='vacancie_location'>
                             <svg width="10" height="13" fill="#5E5E5E" viewBox="0 0 10 13" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.90988 7.14288C4.4684 7.14288 4.03684 7.01196 3.66977 6.76669C3.30269 6.52142 3.01659 6.17281 2.84765 5.76494C2.6787 5.35707 2.6345 4.90826 2.72063 4.47526C2.80675 4.04227 3.01934 3.64454 3.33152 3.33237C3.64369 3.0202 4.04142 2.80761 4.47441 2.72148C4.9074 2.63535 5.35621 2.67956 5.76408 2.8485C6.17195 3.01745 6.52057 3.30355 6.76584 3.67062C7.01111 4.03769 7.14202 4.46926 7.14202 4.91073C7.14131 5.50252 6.90591 6.06986 6.48746 6.48831C6.069 6.90677 5.50166 7.14217 4.90988 7.14288ZM4.90988 3.57145C4.64499 3.57145 4.38606 3.65 4.16581 3.79716C3.94557 3.94432 3.77391 4.15349 3.67254 4.39821C3.57117 4.64293 3.54465 4.91222 3.59633 5.17201C3.648 5.43181 3.77556 5.67045 3.96286 5.85775C4.15016 6.04505 4.3888 6.17261 4.6486 6.22428C4.90839 6.27596 5.17768 6.24944 5.4224 6.14807C5.66712 6.0467 5.87629 5.87504 6.02345 5.6548C6.17062 5.43456 6.24916 5.17562 6.24916 4.91073C6.24881 4.55564 6.10759 4.21519 5.8565 3.96411C5.60542 3.71302 5.26497 3.5718 4.90988 3.57145Z" />
@@ -37,6 +39,8 @@ const VacanciesList = () => {
                         </div>
                         <p className='vacancie_description'>{listEl.desc}</p>
                     </div>
+                    </Link>
+                  
                 ))}
             </div>
             <div className='more_btn'>

@@ -18,7 +18,7 @@ const Modal = (props) => {
 
             </div>
             <div className='modal_search_input'>
-                <input type="search"  placeholder='AXTARIS EDIN...' />
+                <input type="text"  placeholder='AXTARIS EDIN...' />
             </div>
         </div>
     )

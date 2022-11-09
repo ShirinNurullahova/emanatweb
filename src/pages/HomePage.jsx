@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react'
 import '../components/HomeComponents/Home.scss'
+// import HomeSocial from '../components/HomeComponents/HomeSocial';
 
 const HomeBanner = React.lazy(() => import('../components/HomeComponents/HomeBanner')); // Lazy-loaded
 const HomeEmekdasliqSection = React.lazy(() => import('../components/HomeComponents/HomeEmekdasliqSection')); // Lazy-loaded
@@ -9,6 +10,7 @@ const HomeJoinus = React.lazy(() => import('../components/HomeComponents/HomeJoi
 const HomeNews = React.lazy(() => import('../components/HomeComponents/HomeNews')); // Lazy-loaded
 const HomePaySection = React.lazy(() => import('../components/HomeComponents/HomePaySection')); // Lazy-loaded
 const Tag = React.lazy(() => import('../components/LayoutComponents/Tag/Tag')); // Lazy-loaded
+const HomeSocial = React.lazy(() => import('../components/HomeComponents/HomeSocial')); // Lazy-loaded
 
 
 
@@ -26,8 +28,9 @@ const HomePage = () => {
       <HomeEmekdasliqSection />
       <HomePaySection />
       <HomeJoinus />
+      <HomeSocial/>
       <HomeNews />
-      <Tag tags={['#interfeys,#ödəmə,#xidmət,#vaxt,#ödəmə,#xeyriyyə']}/>
+      <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
     </Fragment>
   )
 }

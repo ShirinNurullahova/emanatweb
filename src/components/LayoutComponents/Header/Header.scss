@@ -52,28 +52,48 @@ header {
 
         &-navbar {
             margin-left: 76px;
-
+            
             &-li {
                 position: relative;
                 height: 100%;
-               &-dropdown{
-                transition: 0.5s;
-               }
+
+                &-dropdown {
+                    transition: 0.5s;
+                }
+
                 &-div {
                     transition: 0.5s;
+                    left: -16%;
+                    z-index: 999;
                     position: absolute;
                     visibility: hidden;
                     background-color: white;
-                    width: 100%;
+                    width: 156px;
+                    margin: 20px auto;
+                    padding: 15px;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.02);
+                    border-radius: 4px;
 
                     p {
                         margin-bottom: 5%;
-                        color: black !important;
                         font-size: 12px;
+                        font-family: 'Averta Demo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        //  transition: 0.2s;
+                        color: #070814 ;
                     }
-                  
+                    p:hover{
+                        color: #F99400;
+                        transition: 0.2s;
+                    }
                 }
             }
+
             ul {
                 display: flex;
                 list-style-type: none;
@@ -95,7 +115,7 @@ header {
                 }
 
                 li a:hover {
-                    color:#F99400;
+                    color: #F99400;
                     transition: 0.1s;
 
                 }

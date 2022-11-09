@@ -7,7 +7,7 @@ import SearchIcon from '../../../assets/img/search.svg'
 import Modal from '../Modal/Modal'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [drop , setDrop]=useState(false)
+  
   const toggle = () => {
     if (menuOpen) {
       setMenuOpen(false)
@@ -18,22 +18,20 @@ const Header = () => {
 
     }
   }
-  const dropDown =()=>{
-    if (drop) {
-      setDrop(false)
-      document.getElementsByClassName('header-container-navbar-li-div')[0].style.transition='0.2s'
-       document.getElementsByClassName('header-container-navbar-li-div')[0].style.visibility='hidden'
+  const dropEnter=()=>{
+    document.getElementsByClassName('header-container-navbar-li-div')[0].style.transition='0.2s'
+    document.getElementsByClassName('header-container-navbar-li-div')[0].style.visibility='visible'
 
-       document.getElementsByClassName('header-container-navbar-li-dropdown')[0].style.transform='rotateX(360deg)' 
-
-    } else {
-      setDrop(true)
-      document.getElementsByClassName('header-container-navbar-li-div')[0].style.transition='1s'
-      document.getElementsByClassName('header-container-navbar-li-div')[0].style.visibility='visible'
-
-     document.getElementsByClassName('header-container-navbar-li-dropdown')[0].style.transform='rotateX(180deg)' 
-    }
+   document.getElementsByClassName('header-container-navbar-li-dropdown')[0].style.transform='rotateX(180deg)' 
   }
+
+  const dropLeave=()=>{
+    document.getElementsByClassName('header-container-navbar-li-div')[0].style.transition='0.2s'
+    document.getElementsByClassName('header-container-navbar-li-div')[0].style.visibility='hidden'
+
+    document.getElementsByClassName('header-container-navbar-li-dropdown')[0].style.transform='rotateX(360deg)' 
+  }
+  
   return (
     <header>
       <div className="header-container">
@@ -55,33 +53,16 @@ const Header = () => {
         <nav className='header-container-navbar'>
           <ul>
             <li>
-              <Link to='/about'>Haqqımızda</Link>
+              <Link to='/'>Ana səhifə</Link>
             </li>
             {/* <li><Link to={'/coorperative'}>Terminal xəritəsi</Link></li> */}
 
-            <li className='header-container-navbar-li' onClick={dropDown}>
+            <li className='header-container-navbar-li' onMouseEnter={dropEnter} onMouseLeave={dropLeave}>
               <Link to={'/service'}>Əməkdaşlıq <img  className='header-container-navbar-li-dropdown' src={dropdown}/></Link>
               <div className='header-container-navbar-li-div'>
-                <Link to='/newVacancies'>
-                  <p>yeni vakansiya</p>
-                </Link>
-                <Link to='/vacancyDetails'>
-                  <p>vakansiya detal</p>
-                </Link>
-                <Link to='/bonus'>
-                  <p>bonus</p>
-                </Link>
-                <Link to='/all-vacancies'>
-                  <p>butun vakansiyalar</p>
-                </Link>
-                <Link to='/terminal-map'>
-                  <p>terminal xeritesi</p>
-                </Link>
-                <Link to='/terminal-usage-rules'>
-                <p>terminal istifade qaydasi</p>
-
-                </Link>
-
+                  <p>Marketing</p>
+                  <p>Biznes</p>
+                  <p>Terminal quraşdırılması</p>
               </div>
 
             </li>

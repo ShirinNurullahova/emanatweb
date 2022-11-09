@@ -22,7 +22,7 @@ const ServicesPage = () => {
       <ServicesDark/>
       <ServicesBlue/>
       <ServicesAbout/>
-      <Tag tags={['#reklam,#əməkdaşlıq,#satış,#xərc,#ödəmə,#xeyriyyə']}/>
+      <Tag tags={['#emanat,#fintech,#terminal,#odenisterminali,#terminal']}/>
     </Fragment>
   )
 }

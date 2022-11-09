@@ -51,24 +51,28 @@ const Footer = () => {
 
           <div className='footer-bottom-up'>
             <div className='footer-bottom-up-el'>
-              <h1>emekdasliq</h1>
+              <h1>əməkdaşlıq</h1>
+              <Link to='/service'>
+                <p>Xidmətlər</p>
+              </Link>
+            
               <p>Biznes</p>
-              <p>Terminal Qurasdirilmasi</p>
+              <p>Terminal Quraşdırılması</p>
               <p>Marketinq</p>
 
             </div>
             <div className='footer-bottom-up-el'>
-              <h1>contact</h1>
+              <h1>əlaqə</h1>
               <p>0124044888</p>
               <p>contact@emanat.az</p>
             </div>
             <div className='footer-bottom-up-el'>
-              <h1>social media</h1>
+              <h1>sosial media</h1>
               <div className='footer-bottom-up-el_div'>
                 <div className='footer-bottom-up-el_div_img'>
                   <img src={one}/>
                 </div>
-                <div>
+                <div className='footer-bottom-up-el_div_text'>
                   <p>facebook</p>
                 </div>
               </div>
@@ -76,7 +80,7 @@ const Footer = () => {
               <div className='footer-bottom-up-el_div_img'>
                   <img src={two}/>
                 </div>
-                <div>
+                <div className='footer-bottom-up-el_div_text'>
                   <p>instagram</p>
                 </div>
               </div>
@@ -84,7 +88,7 @@ const Footer = () => {
               <div className='footer-bottom-up-el_div_img'>
                   <img src={three}/>
                 </div>
-                <div>
+                <div className='footer-bottom-up-el_div_text'>
                   <p>linkedin</p>
                 </div>
               </div>
@@ -92,7 +96,7 @@ const Footer = () => {
               <div className='footer-bottom-up-el_div_img'>
                   <img src={four}/>
                 </div>
-                <div>
+                <div className='footer-bottom-up-el_div_text'>
                   <p>youtube</p>
                 </div>
               </div>
@@ -106,16 +110,18 @@ const Footer = () => {
           <div className='footer-bottom-two'>
             <div className='footer-bottom-two-el'>
               <h1>karyera</h1>
-              <p>Vakansiya</p>
+
+              <p><Link to='/all-vacancies'>Vakansiya</Link></p>
               <p className='footer-bottom-two-el-b'>Onlayn muraciet</p>
               <p>Proqramlar</p>
             </div>
             <div className='footer-bottom-two-el'>
-              <h1>diger</h1>
+              <h1>digər</h1>
               <p><Link to={'/faq'}>FAQ</Link></p>
               <p className='footer-bottom-two-el-m'><Link to={'/coorperative'}>Sosial Korporativ Məsuliyyət</Link></p>
-              <p className='footer-bottom-two-el-m'>Terminaldan istifade qaydasi</p>
-              <p className='footer-bottom-two-el-m'> Terminal xeritesi</p>
+              <p className='footer-bottom-two-el-m'><Link to={'/terminal-usage-rules'}>Terminaldan istifadə qaydası</Link></p>
+
+              <p className='footer-bottom-two-el-m'><Link to='/terminal-map'>Terminal xəritəsi</Link> </p>
 
             </div>
           </div>

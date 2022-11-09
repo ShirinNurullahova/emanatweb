@@ -125,50 +125,53 @@
             }
 
             .vacancie_conntainer {
-                .vacancie_details_item {
-                    margin-top: 75px;
-                    padding: 30px 20% 30px 30px;
-                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-                    border-radius: 8px;
-                    transition: all 0.1s linear;
-
-                    .vacancie_location,
-                    .vacancie_expiration_date {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 10px;
-
-                        p {
-                            margin-left: 10px;
-                            @include textStyles('Averta Demo', 16px, 400, #5E5E5E, 19px);
-                            opacity: 0.8;
-                            transition: all 0.1s linear;
-                        }
-                    }
-
-                    .vacancie_description {
-                        margin-top: 25px;
-                        opacity: 0.8;
-                        @include textStyles('Averta Demo', 16px, 400, #070814, 24px);
+                a{
+                    text-decoration: none;
+                    .vacancie_details_item {
+                        margin-top: 75px;
+                        padding: 30px 20% 30px 30px;
+                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                        border-radius: 8px;
                         transition: all 0.1s linear;
-                    }
-
-                    &:hover {
-                        background: #F0F6FB;
-
+    
                         .vacancie_location,
                         .vacancie_expiration_date {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+    
                             p {
-                                color: #0A66B5;
-                            }
-
-                            svg {
-                                fill: #0A66B5;
+                                margin-left: 10px;
+                                @include textStyles('Averta Demo', 16px, 400, #5E5E5E, 19px);
+                                opacity: 0.8;
+                                transition: all 0.1s linear;
                             }
                         }
-
+    
                         .vacancie_description {
-                            color: #0A66B5;
+                            margin-top: 25px;
+                            opacity: 0.8;
+                            @include textStyles('Averta Demo', 16px, 400, #070814, 24px);
+                            transition: all 0.1s linear;
+                        }
+    
+                        &:hover {
+                            background: #F0F6FB;
+    
+                            .vacancie_location,
+                            .vacancie_expiration_date {
+                                p {
+                                    color: #0A66B5;
+                                }
+    
+                                svg {
+                                    fill: #0A66B5;
+                                }
+                            }
+    
+                            .vacancie_description {
+                                color: #0A66B5;
+                            }
                         }
                     }
                 }
