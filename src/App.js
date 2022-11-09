@@ -11,6 +11,9 @@ const Coorperative = React.lazy(() => import('./pages/Coorperative')); // Lazy-l
 const ContactPage = React.lazy(() => import('./pages/ContactPage')); // Lazy-loaded
 const FaqPage = React.lazy(() => import('./pages/FaqPage')); // Lazy-loaded
 const Hr = React.lazy(() => import('./pages/HrPage')); // Lazy-loaded
+const AllVacanciesPage = React.lazy(() => import('./pages/AllVacanciesPage')); // Lazy-loaded
+const TerminalMapPage = React.lazy(() => import('./pages/TerminalMapPage')); // Lazy-loaded
+const TerminalUsageRulesPage = React.lazy(() => import('./pages/TerminalUsageRulesPage')); // Lazy-loaded
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/faq' element={<FaqPage/>} />
           <Route path='/hr' element={<Hr/>} />
+          <Route path='/all-vacancies' element={<AllVacanciesPage />} />
+          <Route path='/terminal-map' element={<TerminalMapPage />} />
+          <Route path='/terminal-usage-rules' element={<TerminalUsageRulesPage />} />
 
         </Routes>
 

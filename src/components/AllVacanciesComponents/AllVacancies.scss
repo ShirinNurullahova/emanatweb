@@ -1,0 +1,210 @@
+@import '../../assets/styles/mixin.scss';
+@import '../../assets/styles/inheritance.scss';
+
+.all_vacancies {
+    .main_desc_vacancies_section {
+        padding: 0 21% 0 9.2%;
+
+        h1 {
+            margin: 110px 0 50px 0;
+            @include textStyles('Averta', 60px, 800, #070814, 72px);
+
+            span {
+                color: #F99400;
+            }
+        }
+
+        p {
+            margin-bottom: 135px;
+            @include textStyles('Averta Demo', 30px, 400, #3C3C3C, 45px);
+        }
+    }
+
+    .vacancies_container {
+        padding: 0 21% 0 9.2%;
+        display: flex;
+        justify-content: space-between;
+
+        .work_types_part {
+            display: flex;
+            justify-content: space-between;
+            width: 240px;
+
+            .type_block {
+                width: calc(100% - 44px);
+                height: 720px;
+                overflow-x: hidden;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .main_block {
+                    &:not(:last-child) {
+                        margin-bottom: 60px;
+                    }
+
+                    .block_title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+
+                        p {
+                            @include textStyles('Averta', 20px, 800, #070814, 24px);
+                        }
+
+                        // svg {
+                        //     transform: rotate(90deg);
+                        // }
+                    }
+
+                    .block_list {
+                        padding-top: 30px;
+
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom: 9px;
+                            }
+
+                            label {
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    margin-left: 16px;
+                                    @include textStyles('Averta Demo', 20px, 400, #070814, 30px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .side_line {
+                width: 4px;
+                height: 720px;
+                background: #5E5E5E36;
+                margin-left: 40px;
+                border-radius: 2px;
+            }
+        }
+
+        .vacancies_list {
+            width: calc(100% - 300px);
+
+            .searc_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                margin-bottom: 100px;
+                border-bottom: 1px solid #BDBDBD;
+
+                input {
+                    @include textStyles('Averta Demo', 20px, 400, #000000, 24px);
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-left: 13px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .vacancie_conntainer {
+                .vacancie_details_item {
+                    margin-top: 75px;
+                    padding: 30px 20% 30px 30px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                    transition: all 0.1s linear;
+
+                    .vacancie_location,
+                    .vacancie_expiration_date {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        p {
+                            margin-left: 10px;
+                            @include textStyles('Averta Demo', 16px, 400, #5E5E5E, 19px);
+                            opacity: 0.8;
+                            transition: all 0.1s linear;
+                        }
+                    }
+
+                    .vacancie_description {
+                        margin-top: 25px;
+                        opacity: 0.8;
+                        @include textStyles('Averta Demo', 16px, 400, #070814, 24px);
+                        transition: all 0.1s linear;
+                    }
+
+                    &:hover {
+                        background: #F0F6FB;
+
+                        .vacancie_location,
+                        .vacancie_expiration_date {
+                            p {
+                                color: #0A66B5;
+                            }
+
+                            svg {
+                                fill: #0A66B5;
+                            }
+                        }
+
+                        .vacancie_description {
+                            color: #0A66B5;
+                        }
+                    }
+                }
+            }
+
+            .more_btn {
+                text-align: center;
+                margin-top: 75px;
+
+                button {
+                    @extend %buttonStyles;
+                }
+            }
+        }
+    }
+
+    .join_team_section {
+        text-align: center;
+        padding-inline: 23%;
+
+        h1 {
+            margin: 200px 0 36px 0;
+            @include textStyles('Averta', 60px, 800, #070814, 72px);
+
+            span {
+                color: #F99400;
+            }
+        }
+
+        p {
+            @include textStyles('Averta Demo', 30px, 400, #3B3B3B, 36px);
+        }
+
+        button {
+            margin: 70px 0 120px 0;
+            @extend %buttonStyles;
+        }
+    }
+}
